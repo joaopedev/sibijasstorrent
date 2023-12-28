@@ -18,7 +18,7 @@ export const LoginForm: React.FC = () => {
   const [loginError, setLoginError] = useState(false);
   const navigate = useNavigate();
   const [emailError, setEmailError] = useState(false);
-  console.log(emailError)
+  console.log(emailError);
 
   const handleLogin = () => {
     if (isAuthenticated) {
@@ -41,7 +41,7 @@ export const LoginForm: React.FC = () => {
   }, [isAuthenticated, navigate, email]);
 
   return (
-    <Box backgroundColor="white" maxW="100%" p={6} rounded='md'>
+    <Box backgroundColor="white" maxW="100%" p={6} rounded="md">
       <VStack spacing={3}>
         <FormControl>
           <FormLabel mb={5}>Email</FormLabel>
