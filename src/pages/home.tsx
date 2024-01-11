@@ -10,6 +10,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import TopButtonsTorrent from "../components/topButtonsTorrent";
+import Torrent from "../components/torrent";
 
 export const Home: React.FC = () => {
   return (
@@ -60,10 +61,10 @@ export const Home: React.FC = () => {
           </Box>
         </GridItem>
         <GridItem colSpan={4} bg="#c9c9c9">
-          <Box mt={8} ml="30%" w="40%">
-            <Input />
+          <Box borderRadius="10px" mt={8} ml="30%" w="40%">
+            <Input placeholder="Search for a Torrent" />
           </Box>
-          <VStack mt={6} spacing={4} align="stretch">
+          <VStack borderRadius="10px" mt={6} spacing={4} align="stretch">
             <Box
               borderWidth="1px"
               borderRadius="10px"
@@ -84,6 +85,19 @@ export const Home: React.FC = () => {
                   boxShadow="md"
                 >
                   <TopButtonsTorrent />
+                </Box>
+              </VStack>
+              <VStack mt={6} spacing={4} align="stretch">
+                <Box
+                  borderWidth="1px"
+                  borderRadius="10px"
+                  borderColor="gray.300"
+                  p={4}
+                  m={3}
+                  bg="white"
+                  boxShadow="md"
+                >
+                <Torrent/>
                 </Box>
               </VStack>
             </Box>
